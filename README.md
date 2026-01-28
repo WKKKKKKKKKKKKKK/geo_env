@@ -1,2 +1,2 @@
 # geo_env
-course assignment for geo_env modelling
+course assignment for geo_env modelling, including code
