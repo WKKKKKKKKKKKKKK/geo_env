@@ -14,8 +14,16 @@ DEM = np.array(dset.variables['SRTMGL1_DEM'])             # extract the elevatio
 dset.close()                                              # close the dataset
 #pdb.set_trace()                                          # add breakpoint here if needed
 
-plt.imshow(DEM)                                           # visualize the DEM using imshow
+lat = dset['lat'].values
+lon = dset['lon'].values
+
+plt.imshow(                                               # plot the DEM data
+    DEM,
+    extent=[lon.min(), lon.max(), lat.min(), lat.max()]
+)
 cbar = plt.colorbar()
 cbar.set_label('Elevation (m asl)')
+plt.xlabel('Longitude(°E)')
+plt.ylabel('Latitude(°N)')
 plt.savefig('assignment_1.png', dpi=300)                  # save the figure as a PNG file
 plt.show()
