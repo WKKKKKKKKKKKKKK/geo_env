@@ -17,5 +17,5 @@ dset.close()                                              # close the dataset
 plt.imshow(DEM)                                           # visualize the DEM using imshow
 cbar = plt.colorbar()
 cbar.set_label('Elevation (m asl)')
-plt.savefig('assignment_1.png', dpi=300)
+plt.savefig('assignment_1.png', dpi=300)                  # save the figure as a PNG file
 plt.show()
