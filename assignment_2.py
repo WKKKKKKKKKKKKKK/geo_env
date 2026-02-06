@@ -79,6 +79,17 @@ axs[1].text(0.02, 0.95, f"Mean = {mean245:.2f} K",
             bbox=dict(facecolor='white', alpha=0.7, edgecolor='none'))
 axs[1].tick_params(labelsize=12)
 
+im3 = axs[2].imshow(diffssp585,
+                    extent=[dset.lon.min(), dset.lon.max(), dset.lat.min(), dset.lat.max()],
+                    cmap=cmap, vmin=vmin, vmax=vmax)
+axs[2].set_title('SSP585', fontsize=16)
+axs[2].set_xlabel('Longitude(°E)', fontsize=14)
+axs[2].set_ylabel('Latitude(°N)', fontsize=14)
+axs[2].text(0.02, 0.95, f"Mean = {mean585:.2f} K",
+            transform=axs[2].transAxes, fontsize=14,
+            bbox=dict(facecolor='white', alpha=0.7, edgecolor='none'))
+axs[2].tick_params(labelsize=12)
+
 cbar = fig.colorbar(im1, ax=axs, orientation='horizontal', fraction=0.046, pad=0.1)
 cbar.set_label('Temperature Difference (K)', fontsize=14)
 cbar.ax.tick_params(labelsize=12)
