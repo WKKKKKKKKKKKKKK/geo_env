@@ -78,3 +78,10 @@ axs[1].text(0.02, 0.95, f"Mean = {mean245:.2f} K",
             transform=axs[1].transAxes, fontsize=14,
             bbox=dict(facecolor='white', alpha=0.7, edgecolor='none'))
 axs[1].tick_params(labelsize=12)
+
+cbar = fig.colorbar(im1, ax=axs, orientation='horizontal', fraction=0.046, pad=0.1)
+cbar.set_label('Temperature Difference (K)', fontsize=14)
+cbar.ax.tick_params(labelsize=12)
+
+plt.savefig('temperature_difference.png', dpi=300)
+plt.show()
