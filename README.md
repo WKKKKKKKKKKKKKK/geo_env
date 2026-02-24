@@ -1,3 +1,4 @@
 # geo_env
 course assignment for geo_env modelling, including code
-<img width="1865" height="965" alt="fd901e0e-5fa9-41b9-8b66-99a64c4ec61d" src="https://github.com/user-attachments/assets/69aae23c-b342-43de-8d90-4d36e1d40cb3" />
+<img width="1525" height="800" alt="84602106-5daa-41a3-8137-cb0f3957ca41" src="https://github.com/user-attachments/assets/5cf9ada8-6ac7-4d2e-8f36-2e15ae162290" />
+
